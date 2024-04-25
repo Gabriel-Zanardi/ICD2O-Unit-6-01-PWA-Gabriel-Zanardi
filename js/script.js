@@ -26,6 +26,6 @@ function myButtonClicked() {
   }
 
   else {
-    document.getElementById("age-answer").innerHTML = "You're too young for most things"
+    document.getElementById("age-answer").innerHTML = "Uh Oh! You're too young for most things"
   }
 }
