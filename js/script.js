@@ -1,9 +1,8 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
 // Created by: Gabriel
+// Created on: Apr 2024
 // This file contains the JS functions for index.html
-
-const randomNumber = Math.floor(Math.random() * 6) + 1
 
 /**
  * This function checks if thge user has selected the random number from above
@@ -11,16 +10,16 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
 
 function myButtonClicked() {
   // input
-  const userNumber = parseInt(document.getElementById("rng-guess").value)
+  const userNumber = parseInt(document.getElementById("age-input").value)
 
   //process
   if (userNumber == randomNumber) {
     // output
-    document.getElementById("rng-answer").innerHTML = "You have guessed the correct number"
+    document.getElementById("age-answer").innerHTML = "You have guessed the correct number"
   }
 
   if (userNumber != randomNumber) {
     // output
-    document.getElementById("rng-answer").innerHTML = "You have guessed the wrong number"
+    document.getElementById("age-answer").innerHTML = "You have guessed the wrong number"
   }
 }
