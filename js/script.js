@@ -21,7 +21,7 @@ function myButtonClicked() {
     document.getElementById("age-answer").innerHTML = "You can watch a PG-13 rated movie alone"
   }
   
-  else if (userAge >= 12) {
+  else if (userAge >= 10 && userAge <=12) {
     document.getElementById("age-answer").innerHTML = "You can watch a G or PG rated movie alone"
   }
 
