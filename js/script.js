@@ -4,10 +4,15 @@
 // Created on: Apr 2024
 // This file contains the JS functions for index.html
 
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICD2O-Unit-6-01-PWA-Gabriel-Zanardi/sw.js", {
+    scope: "/ICD2O-Unit-6-01-PWA-Gabriel-Zanardi/",
+  })
+}
+
 /**
  * This function checks if the user has selected the random number from above
  */
-
 function myButtonClicked() {
   // input
   const userAge = parseInt(document.getElementById("age-input").value)
